@@ -34,7 +34,7 @@ class Bola
 
 class Tabung
 {
-    const PHI = 3.144;
+    const PHI = 3.14;
     public $jari_jari;
     public $tinggi;
     
