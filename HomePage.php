@@ -1,16 +1,29 @@
 <?php
 
-class HomePage{
-    function tampil() : void{
+namespace App\Guest;
+class HomePage
+{
+    public function tampil() : void {
         echo "Halaman depan guest";
     }
 }
 
-class HomePage{
-   function tampil() : void{
-    echo "Halaman depan admin";
-   }
+namespace App\Admin;
+class HomePage
+{
+    public function tampil() : void {
+        echo "Halaman depan admin";
+    }
 }
 
-$hp = new HomePage();
+namespace App\Admin;
+class ManajemenArtikel
+{
+    public function tambah() : void
+    {
+        echo "Artikel berhasil ditambahkan";
+    }
+}
+
+$hp = new \App\Guest\HomePage();
 $hp->tampil();
