@@ -8,11 +8,11 @@ class Pegawai{
     protected int $no_hp;
     public string $alamat;
 
-    public function __construct (int $nip, string $nama, int $no_hp, string $alamat){
+    public function __construct (int $nip, string $nama, string $alamat, int $no_hp){
         $this->nip = $nip;
         $this->nama = $nama;
-        $this->no_hp = $no_hp;
         $this->alamat = $alamat;
+        $this->no_hp = $no_hp;
     }
 
     public function cekIn() : bool{
